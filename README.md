@@ -1,0 +1,1 @@
+# qa-course-platform-tests
