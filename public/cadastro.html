@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Aluno</title>
+</head>
+<body>
+  <form id="form-cadastro" onsubmit="mostrarMensagem(event)">
+    <input id="nome" type="text" placeholder="Nome" />
+    <input id="email" type="email" placeholder="Email" />
+    <input id="senha" type="password" placeholder="Senha" />
+    <button id="botao-cadastrar" type="submit">Cadastrar</button>
+  </form>
+
+  <p id="mensagem-sucesso" style="display: none;">Cadastro realizado com sucesso</p>
+
+  <script>
+    function mostrarMensagem(event) {
+      event.preventDefault();
+      document.getElementById('mensagem-sucesso').style.display = 'block';
+    }
+     function mostrarMensagem(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('senha').value;
+
+    fetch('http://localhost:3000/usuarios', {
+      method: 'POST',
+      body: JSON.stringify({ nome, email, senha }),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(() => {
+      document.getElementById('mensagem-sucesso').style.display = 'block';
+    });
+  }
+  </script>
+</body>
+</html>

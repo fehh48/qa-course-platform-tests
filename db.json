@@ -1,0 +1,16 @@
+{
+  "usuarios": [
+    {
+      "id": "d956",
+      "nome": "Felipe Batista",
+      "email": "felipe@test.com",
+      "senha": "123456"
+    },
+    {
+      "id": "baf5",
+      "nome": "etetetet",
+      "email": "felipe_4828@hotmail.com",
+      "senha": "2314124124513512"
+    }
+  ]
+}
