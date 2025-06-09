@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:db": "node reset-db.js && node server.js"
+    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "cypress": "^14.4.1",
+    "cypress": "^14.4.1"
+  },
+  "dependencies": {
     "json-server": "^1.0.0-beta.3"
   }
 }
