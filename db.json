@@ -11,6 +11,18 @@
       "nome": "etetetet",
       "email": "felipe_4828@hotmail.com",
       "senha": "2314124124513512"
+    },
+    {
+      "id": "97c2",
+      "nome": "Felipe Batista",
+      "email": "felipe@test.com",
+      "senha": "123456"
+    },
+    {
+      "id": "8b4d",
+      "nome": "Felipe Batista",
+      "email": "felipe@test.com",
+      "senha": "123456"
     }
   ]
 }
